@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">素数クイズ</string>
+    <string name="action_change">設定</string>
+
+    <string name="rule">
+        ルールは簡単\n
+        素数は○、素数じゃない数字は✖を押してね！\n
+        5回間違えるとゲームオーバーになっちゃうから気を付けてね。\n
+        設定から問題数と出題される数字の最大値を自分で決められるよ。
+    </string>
+
+</resources>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lifeistech.android.sosuuapp_001.MainActivity"
+    android:background="#eaffea">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="@dimen/activity_margin">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/hart1"
+                android:id="@+id/life5"
+                android:layout_weight="1"
+                android:layout_margin="2dp" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/hart1"
+                android:id="@+id/life4"
+                android:layout_weight="1"
+                android:layout_margin="2dp" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/hart1"
+                android:id="@+id/life3"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_margin="2dp" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/hart1"
+                android:id="@+id/life2"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_margin="2dp" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/hart1"
+                android:id="@+id/life1"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_margin="2dp" />
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="7.5">
+
+                <TextView
+                    android:text="TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/result"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="5dp"
+                    android:textSize="16sp" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/number"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:textSize="50sp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5">
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/maru"
+                android:id="@+id/maruB"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="maru"
+                android:background="@drawable/frame_style_red"
+                android:layout_marginRight="10dp"
+                android:scaleType="fitCenter"
+                android:layout_margin="@dimen/activity_margin"
+                android:padding="10dp"
+                android:elevation="3dp" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/batsu"
+                android:id="@+id/batuB"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:onClick="batu"
+                android:background="@drawable/frame_style_blue"
+                android:layout_marginLeft="10dp"
+                android:scaleType="fitCenter"
+                android:layout_margin="@dimen/activity_margin"
+                android:padding="10dp"
+                android:elevation="3dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:text="START"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/startButton"
+            android:layout_weight="1"
+            android:onClick="start"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="22sp"
+            android:background="@drawable/frame_style_start"
+            android:layout_margin="@dimen/activity_margin"
+            android:elevation="1dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
